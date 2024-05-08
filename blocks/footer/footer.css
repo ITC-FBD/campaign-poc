@@ -5,6 +5,7 @@ footer {
   width: 400px;
   .columns-container{
      background-color: rgb(255 255 255 / 85%);
+     padding-left:37px;
   }
   .columns > div {
     padding: 3px 0;
