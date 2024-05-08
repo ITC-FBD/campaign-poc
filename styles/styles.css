@@ -18,9 +18,17 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --df-brand-bg-color:#1f0607;
+  --df-brand-text-color:#ffcf74;
+  --df-brand-border-color: rgb(68 45 0);
+  --aa-brand-bg-color:#ffffff;
+  --aa-brand-text-color:#000000;
+  --star-rating-size: medium;
+  --star-rating-color: #eee;
+  --star-rating-background: orangered;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: "Noto Sans", "Open Sans", sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -37,8 +45,9 @@
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
 
+
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 50px;
 }
 
 @font-face {
@@ -60,13 +69,19 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
-  margin: 0;
-  font-family: var(--body-font-family);
-  line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
-  display: none;
+  font: caption;
+  font-size: 100%;
+  font-optical-sizing: auto;
+  font-family: var(--body-font-family);
+  margin: 0;
+  padding: 0;
+  background: center fixed no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: url(../icons/aashirvaad-bg.jpg);
 }
 
 body.appear {
@@ -74,7 +89,9 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  max-height: var(--nav-height);
+  position: fixed;
+  width: 100%;
 }
 
 h1, h2, h3,
@@ -112,14 +129,44 @@ pre {
   overflow: scroll;
 }
 
-main pre {
-  background-color: var(--light-color);
-  padding: 1em;
-  border-radius: .25em;
-  overflow-x: auto;
-  white-space: pre;
+main {
+  max-width: 600px;
+  width: 600px;
+  background-color: white;
+  color: #000;
+  margin: auto;
+  min-height: 100%;
+  border: 0;
+  border-width: 0 1px;
+  display: grid;
+  pre {
+    background-color: var(--light-color);
+    padding: 1em;
+    border-radius: .25em;
+    overflow-x: auto;
+    white-space: pre;
+  }
 }
 
+@media (height <=700px) {
+  main,
+  .header,
+  .footer{
+     max-width: 400px;
+     width: 400px;
+  }
+}
+@media (width <=600px) {
+  body {
+    background: none !important;
+  }
+  main,
+  .header,
+  .footer{
+    max-width: 100vw;
+    width: 100%;
+   }
+}
 /* links */
 a:any-link {
   color: var(--link-color);
@@ -186,13 +233,26 @@ main img {
 }
 
 /* sections */
-main .section {
+/*main .section {
   padding: 64px 16px;
 }
-
+*/
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 37px 0px 0px 0px;
+  }
+}
+main .section.marquee {
+  padding: 0px;
+  font-size:small;
+  font-weight: bold;
+  background-color: var(--df-brand-bg-color, #f5f5f5);
+  color:var(--df-brand-text-color);
+  margin: 1em 0;
+  text-align: center;
+  p {
+    margin:0;
+    padding: 5px 0;
   }
 }
 
