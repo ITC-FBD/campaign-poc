@@ -17,9 +17,7 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
   block.append(footer);
   block.querySelector('.icon-like').addEventListener('click', () => {
-     let imgElement = document.querySelector(".icon-like img");
-     imgElement.src=`${window.hlx.codeBasePath}/icons/red-like.svg`;
+    const imgElement = document.querySelector('.icon-like img');
+    imgElement.src = `${window.hlx.codeBasePath}/icons/red-like.svg`;
   });
 }
-
-

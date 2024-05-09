@@ -111,8 +111,8 @@ export default async function decorate(block) {
   if (pic) {
     const picWrapper = pic.closest('p');
     if (picWrapper && picWrapper.children.length === 1) {
-       // picture is only content in column
-       picWrapper.classList.add('df-logo-img');
+      // picture is only content in column
+      picWrapper.classList.add('df-logo-img');
     }
   }
 
