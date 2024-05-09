@@ -3,7 +3,6 @@
       line-height: 1em;
       padding: 5px 0;
       margin:auto;
-      z-index: 2;
       background-color: var(--aa-brand-bg-color);
       color:var(--aa-brand-text-color);
       border-bottom: 1px solid #eee;

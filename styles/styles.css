@@ -21,7 +21,9 @@
   --df-brand-bg-color:#1f0607;
   --df-brand-text-color:#ffcf74;
   --df-brand-border-color: rgb(68 45 0);
+  --aa-brand-border-color: rgb(192, 20, 46);
   --aa-brand-bg-color:#ffffff;
+  --aa-brand-color:#e31835;;
   --aa-brand-text-color:#000000;
   --star-rating-size: medium;
   --star-rating-color: #eee;
@@ -91,6 +93,7 @@ body.appear {
 header {
   max-height: var(--nav-height);
   position: fixed;
+  z-index:4;
   width: 100%;
 }
 
@@ -150,6 +153,7 @@ main {
 
 @media (height <=700px) {
   main,
+  main .section,
   .header,
   .footer{
      max-width: 400px;
@@ -237,6 +241,10 @@ main img {
   padding: 64px 16px;
 }
 */
+main .section {
+  max-width:400px;
+  width:400px;
+}
 @media (width >= 600px) {
   main .section {
     padding: 37px 0px 0px 0px;
@@ -267,4 +275,53 @@ main .section.marquee {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+/*aashirvaad*/
+main .section.cookbook-text{
+  text-align:center;
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  border: 0;
+  h6{
+    font-size: large;
+    font-weight: bold;
+    margin: auto;
+    padding: 0 10px;
+    color: var(--aa-brand-color, initial);
+  }
+  .default-content-wrapper{
+    > p:last-of-type{
+      margin:auto;
+      font-size: x-small;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    } > p:first-of-type{
+      font-size: medium;
+      font-style: italic;
+      font-family: georgia, serif;
+      line-height: 1.5em;
+    }
+    .button-container{
+      margin-bottom:0;
+    }
+  }
+  strong > a{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 0.4em 2.5em;
+    border-radius: 0.3em;
+    border: 1px solid var(--aa-brand-border-color, red);
+    display: inline-block;
+    font-weight: bold;
+    min-width: 50%;
+    text-decoration: none;
+    background-color: var(--aa-brand-color, red);
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
