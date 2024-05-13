@@ -32,7 +32,11 @@
   }
 }
  .section.buy-now-cards{
-  padding : 0px 16px;
+    padding: 0;
+   .columns-wrapper {
+     margin: 0;
+     padding: 0 10px;
+   }
   .columns {
     >div:last-of-type {
        border: 0;
