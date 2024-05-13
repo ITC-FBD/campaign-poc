@@ -1,11 +1,41 @@
 footer {
-  padding: 2rem;
-  background-color: var(--light-color);
+  bottom: 0;
+  position: fixed;
   font-size: var(--body-font-size-s);
+  width: 400px;
+  .columns-container{
+     background-color: rgb(255 255 255 / 85%);
+     padding-left:37px;
+  }
+  .columns > div {
+    padding: 3px 0;
+    align-items: center;
+    flex-direction: unset;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: small;
+    font-weight: bold;
+    > div > p, .icon{
+      width: calc(20px + 0.5vmin);
+      max-width: 30px;
+      max-height: 30px;
+      text-align: center;
+    }
+    > div > h6{
+     margin:0px;
+    }
+  }
+}
+.footer-wrapper{
+  width:100%;
 }
 
 footer .footer {
-  max-width: 1200px;
+  border-top: 1px solid #eee;
+  max-width: 400px;
+  line-height: 1.25;
   margin: auto;
 }
 

@@ -13,6 +13,7 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col');
         }
       }
+      row.lastElementChild.classList.add('buy-now-button');
     });
   });
 }
