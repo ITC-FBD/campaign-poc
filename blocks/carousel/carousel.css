@@ -39,11 +39,11 @@ main .section.carousel-container {
 }
 
 .carousel .carousel-slide:has(.carousel-slide-content[data-align="center"]) {
-  //align-items: center;
+  align-items: center;
 }
 
 .carousel .carousel-slide:has(.carousel-slide-content[data-align="right"]) {
- // align-items: flex-end;
+  align-items: flex-end;
 }
 
 .carousel .carousel-slide .carousel-slide-image picture {
@@ -51,28 +51,6 @@ main .section.carousel-container {
   inset: 0;
 }
 
-.aa-banner-with-text .carousel .carousel-slide{
-  .carousel-slide-content{
-     margin: 15.5rem 0 0 0;
-     color:black;
-     background:none;
-     > h2{
-      font-size: large;
-      margin-bottom: 0;
-      font-weight: bold;
-      line-height: 1em;
-     }
-     > p{
-       font-size: 0.8em;
-       color: #444;
-       border-bottom: 3px solid var(--aa-brand-color, #eee);
-       padding-bottom: 1em;
-     }
-  }
-  .carousel-slide-image picture {
-    //position: unset;
-  }
-}
 
 .carousel .carousel-slide .carousel-slide-image picture > img {
   height: auto;
@@ -83,7 +61,7 @@ main .section.carousel-container {
 .carousel .carousel-slide .carousel-slide-content {
   z-index: 1;
   padding: 1rem;
- // margin: 1.5rem 3rem;
+  margin: 1.5rem 3rem;
   color: white;
   background-color: rgba(0 0 0 / 50%);
   position: relative;
@@ -188,11 +166,11 @@ main .section.carousel-container {
   }
 
   .carousel .carousel-slide .carousel-slide-content {
-   //--slide-content-width: 50%;
+   --slide-content-width: 50%;
     margin: 2.5rem 5rem;
   }
 
   .carousel .carousel-slide .carousel-slide-content[data-align="justify"] {
-    //--slide-content-width: auto;
+    --slide-content-width: auto;
   }
 }

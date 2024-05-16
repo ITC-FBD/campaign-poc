@@ -83,7 +83,7 @@ body {
 }
 
 body {
-  background-image: url(../icons/aashirvaad-bg.jpg);
+  background-image: url(../icons/dive-into-df.jpg);
 }
 
 body.appear {
@@ -275,53 +275,4 @@ main .section.marquee {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
-}
-
-/*aashirvaad*/
-main .section.cookbook-text{
-  text-align:center;
-  width: 95%;
-  margin: auto;
-  padding: 5px;
-  border: 0;
-  h6{
-    font-size: large;
-    font-weight: bold;
-    margin: auto;
-    padding: 0 10px;
-    color: var(--aa-brand-color, initial);
-  }
-  .default-content-wrapper{
-    > p:last-of-type{
-      margin:auto;
-      font-size: x-small;
-      color: black;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 5px;
-    } > p:first-of-type{
-      font-size: medium;
-      font-style: italic;
-      font-family: georgia, serif;
-      line-height: 1.5em;
-    }
-    .button-container{
-      margin-bottom:0;
-    }
-  }
-  strong > a{
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    padding: 0.4em 2.5em;
-    border-radius: 0.3em;
-    border: 1px solid var(--aa-brand-border-color, red);
-    display: inline-block;
-    font-weight: bold;
-    min-width: 50%;
-    text-decoration: none;
-    background-color: var(--aa-brand-color, red);
-    color: #fff;
-    text-transform: uppercase;
-  }
 }

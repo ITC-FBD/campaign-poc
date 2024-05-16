@@ -3,8 +3,8 @@
       line-height: 1em;
       padding: 5px 0;
       margin:auto;
-      background-color: var(--aa-brand-bg-color);
-      color:var(--aa-brand-text-color);
+      background-color: var(--df-brand-bg-color);
+      color:var(--df-brand-text-color);
       border-bottom: 1px solid #eee;
       font-family: "Noto Sans", "Open Sans", sans-serif;
   }
